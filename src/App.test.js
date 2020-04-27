@@ -5,7 +5,7 @@ import App from './App'
 // Testing CI implementation
 afterEach(cleanup)
 
-test('snapshot', () => {
+test('Checks if current rendering matches snapshot', () => {
     const { asFragment } = render(<App />)
 
     expect(asFragment(<App />)).toMatchSnapshot()
